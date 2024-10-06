@@ -1,0 +1,121 @@
+.about-us-title {
+  margin-bottom: 8px;
+}
+
+.about-containers-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.our-vision-left {
+  width: 35%;
+}
+
+.our-vision-left .ant-image {
+  width: 42rem;
+  height: 42rem;
+}
+
+.our-vision-left .ant-image-img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  border-radius: 2.4rem;
+}
+
+.our-vision-right {
+  width: 65%;
+}
+
+.about-subtitle {
+  margin-bottom: 4.2rem;
+}
+
+.our-left {
+  width: 26%;
+}
+
+.our-right {
+  position: relative;
+  width: 74%;
+}
+
+.our-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--light-gray-tint1);
+}
+
+.our-m2d-right {
+  padding-left: 8rem;
+}
+
+.our-m2d-right::before {
+  left: 0;
+}
+
+.our-dubai-right {
+  padding-right: 8rem;
+}
+
+.our-dubai-right::before {
+  right: 0;
+}
+
+.our-dubai-left {
+  text-align: right;
+}
+
+/* RESPONSIVE START */
+@media screen and (max-width: 767px) {
+  .about-containers-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .our-vision-left {
+    margin-bottom: 4rem;
+  }
+
+  .our-vision-left,
+  .our-vision-right,
+  .our-left,
+  .our-right {
+    width: 100%;
+  }
+
+  .our-right::before {
+    display: none;
+  }
+
+  .our-m2d-right,
+  .our-dubai-right {
+    padding: 0;
+  }
+
+  .our-dubai {
+    flex-direction: column-reverse;
+  }
+
+  .our-dubai-left {
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-bottom: 4.2rem;
+  }
+
+  .facility-content-wrap {
+    text-align: center;
+  }
+
+  .facility-icon-wrap {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+}
+
+/* RESPONSIVE END */
